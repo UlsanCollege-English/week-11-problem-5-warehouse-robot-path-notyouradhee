@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Run pytest tests",
+    "setup": "pip install pytest",
+    "run": "python -m pytest -q",
+    "input": "",
+    "output": "",
+    "comparison": "included",
+    "timeout": 10,
+    "points": 100
+  }
+]
