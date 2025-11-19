@@ -1,5 +1,5 @@
 import pytest
-from hw05.main import parse_grid, grid_shortest_path
+from main import parse_grid, grid_shortest_path
 
 def test_parse_finds_start_and_target():
     lines = [
@@ -30,7 +30,7 @@ def test_unreachable_returns_none():
     assert grid_shortest_path(lines) is None
 
 def test_start_equals_target():
-    lines = ["ST"]
+    lines = ["S"]
     p = grid_shortest_path(lines)
     assert p == ["0,0"]
 
